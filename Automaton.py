@@ -88,7 +88,7 @@ try:
                     graph = dfa.show_diagram(inpt)
                     strr.error("The String `" + inpt + "` is " + out) 
             except:
-                out = "invalid." 
+                strr.error("The Input String is invalid!")
     
     strr.write("")
 
@@ -97,7 +97,37 @@ try:
     f = open("Automatonoutput.svg")
     lines = f.readlines()
     line_string=''.join(lines) 
-    strr.subheader("DFA:")
+    strr.subheader("Deterministic Finite Automata:")
     render_svg(line_string)
+    
 except:
     strr.empty()
+
+strr.write("")
+
+if choice == q1[0]:
+    strr.subheader('Context-Free Grammar:')
+    strr.write("<p style = 'text-align: center;'</p>" + ''' 
+                                    Start symbol: S \n
+                                    S → ABCDEF  \n
+                                    A → b | aa | ab \n
+                                    B → aB | bB | ^ \n
+                                    C → bbC | abaC | abC | ^ \n
+                                    D → aaa | bbb \n
+                                    E → a | b  \n		
+                                    F → aF | bF | abF | ^ \n
+                                    ''', unsafe_allow_html = True)
+
+if choice == q2[0]:
+    strr.subheader('Context-Free Grammar:')
+    strr.write("<p style = 'text-align: center;'</p>" + ''' 
+                                    Start symbol: S \n
+                                    S → ABCDEFG  \n
+                                    A → 1A | 0A | ^ \n
+                                    B → 11 | 00 | 101 | 010 \n
+                                    C → 1C | 0C | 11C | 00C | 101C \n
+                                    D → 11 | 00 \n
+                                    E → 11E | 00E | 101E | ^  \n		
+                                    F → 1 | 0 \n
+                                    G → 1G | 0G | 11G | ^ \n
+                                    ''', unsafe_allow_html = True)
