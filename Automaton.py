@@ -8,13 +8,13 @@ def render_svg(svg):
     html = r'<img src="data:image/svg+xml;base64,%s"/>' % b64
     strr.write(html, unsafe_allow_html=True)
 
-q1 = ["Question 1: ( b + aa + ab ) ( a + b )* ( bb + aba + ab )* ( aaa + bbb ) ( a + b ) ( a + b + ab )*", "( b + aa + ab ) ( a + b )* ( bb + aba + ab )* ( aaa + bbb ) ( a + b ) ( a + b + ab )*"]
-q2 = ["Question 2: ( 1 + 0 )* (11 + 00 + 101 + 010) ( 1 + 0 + 11 + 00 + 101 )* ( 11 + 00 ) ( 11+ 00 + 101 )* ( 1 + 0 ) ( 1 + 0 + 11 )*", "( 1 + 0 )* (11 + 00 + 101 + 010) ( 1 + 0 + 11 + 00 + 101 )* ( 11 + 00 ) ( 11+ 00 + 101 )* ( 1 + 0 ) ( 1 + 0 + 11 )*"]
+q1 = ["1: ( b + aa + ab ) ( a + b )* ( bb + aba + ab )* ( aaa + bbb ) ( a + b ) ( a + b + ab )*", "( b + aa + ab ) ( a + b )* ( bb + aba + ab )* ( aaa + bbb ) ( a + b ) ( a + b + ab )*"]
+q2 = ["2: ( 1 + 0 )* (11 + 00 + 101 + 010) ( 1 + 0 + 11 + 00 + 101 )* ( 11 + 00 ) ( 11+ 00 + 101 )* ( 1 + 0 ) ( 1 + 0 + 11 )*", "( 1 + 0 )* (11 + 00 + 101 + 010) ( 1 + 0 + 11 + 00 + 101 )* ( 11 + 00 ) ( 11+ 00 + 101 )* ( 1 + 0 ) ( 1 + 0 + 11 )*"]
 
 strr.set_page_config(page_title = "The Automaton", layout = "centered")
 strr.write("<h1 style = 'text-align: center'>The Automaton</h1>", unsafe_allow_html = True)
 
-strr.subheader('Select a Question:')
+strr.subheader('Select Expression:')
 choice = strr.selectbox("", [q1[0], q2[0]])
 
 if choice == q1[0]:
@@ -111,11 +111,11 @@ if choice == q1[0]:
                                     Start symbol: S \n
                                     S → ABCDEF  \n
                                     A → b | aa | ab \n
-                                    B → aB | bB | ^ \n
-                                    C → bbC | abaC | abC | ^ \n
+                                    B → aB | bB | λ \n
+                                    C → bbC | abaC | abC | λ \n
                                     D → aaa | bbb \n
                                     E → a | b  \n		
-                                    F → aF | bF | abF | ^ \n
+                                    F → aF | bF | abF | λ \n
                                     ''', unsafe_allow_html = True)
 
 if choice == q2[0]:
@@ -123,11 +123,11 @@ if choice == q2[0]:
     strr.write("<p style = 'text-align: center;'</p>" + ''' 
                                     Start symbol: S \n
                                     S → ABCDEFG  \n
-                                    A → 1A | 0A | ^ \n
+                                    A → 1A | 0A | λ \n
                                     B → 11 | 00 | 101 | 010 \n
                                     C → 1C | 0C | 11C | 00C | 101C \n
                                     D → 11 | 00 \n
-                                    E → 11E | 00E | 101E | ^  \n		
+                                    E → 11E | 00E | 101E | λ  \n		
                                     F → 1 | 0 \n
-                                    G → 1G | 0G | 11G | ^ \n
+                                    G → 1G | 0G | 11G | λ \n
                                     ''', unsafe_allow_html = True)
