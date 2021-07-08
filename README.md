@@ -19,7 +19,7 @@ An Automata web application created for simulating the following languages in a 
 
 ## 3.) Watch the simulation in the DFA
 
-![Simulate]()
+![Simulate](https://github.com/Kramaaron/The-Automaton/blob/master/gitpicts/SampleRun.mp4)
 
 # Sample Runs
 
@@ -27,20 +27,20 @@ An Automata web application created for simulating the following languages in a 
 
 If you input a valid string
 
-![Sample Run Accept]()
+![Sample Run Accept](https://github.com/Kramaaron/The-Automaton/blob/master/gitpicts/RE1SampleValid.PNG)
 
 If you input an invalid string
 
-![Sample Run Invalid]()
+![Sample Run Invalid](https://github.com/Kramaaron/The-Automaton/blob/master/gitpicts/RE1SampleInvalid.PNG)
 ## RE 2
 
 If you input a valid string
 
-![Sample Run Accept]()
+![Sample Run Accept](https://github.com/Kramaaron/The-Automaton/blob/master/gitpicts/RE2SampleValid.PNG)
 
 If you input an invalid string
 
-![Sample Run Invalid]()
+![Sample Run Invalid](https://github.com/Kramaaron/The-Automaton/blob/master/gitpicts/RE2SampleInvalid.PNG)
 
 # Context Free Grammar
 
