@@ -22,3 +22,22 @@ An Automata web application created for simulating the following languages in a 
 ![Simulate]()
 
 # Sample Runs
+
+## RE 1
+
+If you input a valid string
+
+![Sample Run Accept]()
+
+If you input an invalid string
+
+![Sample Run Invalid]()
+## RE 2
+
+If you input a valid string
+
+![Sample Run Accept]()
+
+If you input an invalid string
+
+![Sample Run Invalid]()
