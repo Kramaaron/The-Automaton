@@ -5,7 +5,7 @@ An Automata web application created for simulating the following languages in a 
 
 ![RE2](https://github.com/Kramaaron/The-Automaton/blob/master/gitpicts/RE2.JPG)
 # URL
-#### (insert URL of online web app here)
+#### (Still pending for the URL)
 
 # How to use the project?
 
