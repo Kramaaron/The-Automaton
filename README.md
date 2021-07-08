@@ -42,14 +42,14 @@ If you input an invalid string
 
 ![Sample Run Invalid]()
 
-#Context Free Grammar
+# Context Free Grammar
 
 Part of the web application that explains the grammar of the language
 
-##RE1 CFG
+## RE1 CFG
 
 ![CFG1](https://github.com/Kramaaron/The-Automaton/blob/master/gitpicts/CFG1.JPG)
 
-##RE2 CFG
+## RE2 CFG
 
 ![CFG2](https://github.com/Kramaaron/The-Automaton/blob/master/gitpicts/CFG2.JPG)
