@@ -19,7 +19,7 @@ An Automata web application created for simulating the following languages in a 
 
 ## 3.) Watch the simulation in the DFA
 
-![Simulate](https://github.com/Kramaaron/The-Automaton/blob/master/gitpicts/SampleRun.mp4)
+![Simulate](https://github.com/Kramaaron/The-Automaton/blob/master/gitpicts/SampleRun.gif)
 
 # Sample Runs
 
