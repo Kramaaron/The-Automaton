@@ -1,12 +1,8 @@
+
 from automata.fa.dfa import DFA
 from visual_automata.fa.dfa import VisualDFA
 import streamlit as strr
-import base64
 
-def render_svg(svg):
-    b64 = base64.b64encode(svg.encode('utf-8')).decode("utf-8")
-    html = r'<img src="data:image/svg+xml;base64,%s"/>' % b64
-    strr.write(html, unsafe_allow_html=True)
 
 q1 = ["1: ( b + aa + ab ) ( a + b )* ( bb + aba + ab )* ( aaa + bbb ) ( a + b ) ( a + b + ab )*", "( b + aa + ab ) ( a + b )* ( bb + aba + ab )* ( aaa + bbb ) ( a + b ) ( a + b + ab )*"]
 q2 = ["2: ( 1 + 0 )* (11 + 00 + 101 + 010) ( 1 + 0 + 11 + 00 + 101 )* ( 11 + 00 ) ( 11+ 00 + 101 )* ( 1 + 0 ) ( 1 + 0 + 11 )*", "( 1 + 0 )* (11 + 00 + 101 + 010) ( 1 + 0 + 11 + 00 + 101 )* ( 11 + 00 ) ( 11+ 00 + 101 )* ( 1 + 0 ) ( 1 + 0 + 11 )*"]
@@ -92,13 +88,8 @@ try:
     
     strr.write("")
 
-    graph.format = "svg"
-    graph.render("Automatonoutput")
-    f = open("Automatonoutput.svg")
-    lines = f.readlines()
-    line_string=''.join(lines) 
     strr.subheader("Deterministic Finite Automata:")
-    render_svg(line_string)
+    graph
     
 except:
     strr.empty()
