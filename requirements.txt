@@ -1,0 +1,9 @@
+streamlit==0.84.0
+visual-automata==1.1.1
+numpy==1.20.3
+pandas==1.2.4
+jupyterlab==3.0.16
+graphviz==0.16
+colormath==3.0.0
+automata-lib==4.0.0.post1
+base58==2.1.0
